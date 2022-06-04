@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>DOMOCAS ESTADOS</title>
+  <link rel="icon" type="image/png"  href="favicon.ico">
+  <meta httpequiv="ContentType" content="text/html, width=device-width, initial-scale=1" charset="UTF-8">
+  <link href="stilobase.css" rel="stylesheet" type="text/css">
+  <script src="funcionesbase.js"></script> 
+</head>
+<style>
+</style>
+<body>
+  <div id="fondoAyuda" style= "width:100%;position:absolute;left:0px" >
+    <fieldset style="top:10px; left:0px;position:absolute;">
+    <legend><h1>Estados del dispositivo: 
+    <input  name="CODIGO"  type="text" style="background-color: rgb(214, 157, 70);" readonly></h1></legend>
+    <div class="estdsp"></div>
+    </fieldset>
+<script>
+//*****************************************************************
+obtieneConfiguracion(JSON.parse(sessionStorage.dato));
+//*****************************************************************
+</script>
+</body>
+</html>

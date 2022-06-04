@@ -1,0 +1,9 @@
+Introducir opción "Especial tarifa VE" (en HTML)
+Introducir el número de horas con la tarifa más barata
+Resto de condiciones temporales igual (en HTML)
+En servidor, con fecha, obtener array de horas y precios de la web
+Calcular los rangos horarios que sumen el número de horas más económicas del paso anterior
+La web se configura en parámetros
+Cálcula los rangos horarios agrupados.
+MXYWWR85
+KINYOW74

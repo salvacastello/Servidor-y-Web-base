@@ -1,0 +1,24 @@
+[
+    {
+        "x": {
+            "Tabla": "generales",
+            "Id": "x",
+            "Estado": "P",
+            "Version": "V201905",
+            "Origen": "web",
+            "Planoactivo": "1",
+            "Tamanoicono": "29",
+            "Incrementotamanoicono": "1",
+            "opacidad": "0.9",
+            "opacidadfondo0": "0.31",
+            "anchofondo": "1250",
+            "altofondo": "700",
+            "colortextobarra": "#220011",
+            "colorfondobarra": "#11bbaa",
+            "dibujofondo0": "https://www.revistaneo.com/sites/default/files/inline-images/1_6.jpg",
+            "opacidadfondo": "0.42",
+            "ruta": "http://localhost:C:\\Users\\HP Salva\\Desktop\\Servidor y Web base",
+            "ultimo": "1"
+        }
+    }
+]

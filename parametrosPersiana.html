@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Bite flex CONFIGURACION</title>
+  <link rel="icon" type="image/png"  href="favicon.ico">
+  <meta httpequiv="ContentType" content="text/html, width=device-width, initial-scale=1" charset="UTF-8">
+  <link href="estilos.css" rel="stylesheet" type="text/css">
+  <link href="w3.css" rel="stylesheet" type="text/css">
+  <script src="funcionesbase.js"></script> 
+</head>
+
+<body>
+  <div id="fondoAyuda" class="w3-container" style= "width: 900px; height: 100%; background-color: black;" 
+  style="top:0px; left: 0px;" >
+  <img src="https://image.freepik.com/foto-gratis/fondo-piso-madera_53876-88628.jpg"  
+  class="w3-opacity-med" style= "width: 100%; height: 100%; top:0px; left: 0px;">
+  <form action="/PROCESAPERSIANA" method="POST">
+    <fieldset style="top:10px; left: 20px; position: absolute;">
+        <legend><h3>Parámetros de persiana</h3></legend>
+
+        <label for="CODIGO">Referencia del sensor o accionador</label>
+        <input   id="CODIGO" name="CODIGO" type="text" style="background-color: cadetblue;" readonly><br>
+        <label for="TIPO">Tipo de sensor o accionador</label>
+        <input   id="TIPO" name="TIPO" type="text" style="background-color: cadetblue;" readonly><br>
+
+        <label for="TENTRADA">Tipo de entrada</label>
+        <input  id="TENTRADA" name="TENTRADA"  type="text" style="background-color: cadetblue;" readonly><br>
+        <label for="TSALIDA">Tipo de salida</label>
+        <input  id="TSALIDA" name="TSALIDA"  type="text" style="background-color: cadetblue;" readonly><br>
+
+        <label for="CPU">Código de red</label>
+        <input  id="CPU" name="CPU"  type="text" style="background-color: cadetblue;" readonly><br>
+        
+        <label for="TPERSIANA">Tiempo de subida en segundos</label>
+        <input  id="TPERSIANA" name="TPERSIANA" type="number"><br><br>
+        <input type="submit" style="text-align: center; padding: 3px;" value="Aceptar">
+    </fieldset>
+  </fieldset>
+</form>
+<script>
+//*****************************************************************
+obtieneConfiguracion(JSON.parse(sessionStorage.dato));
+//*****************************************************************
+  </script>
+</body>
+
+</html>

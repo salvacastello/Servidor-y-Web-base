@@ -1,0 +1,607 @@
+[
+    {
+        "IAK7": {
+            "Tabla": "estados",
+            "Id": "IAK7",
+            "Estado": "P",
+            "Version": "V201905",
+            "Origen": "web",
+            "onoff": "0",
+            "ultimo": "1"
+        },
+        "OnOff-JOBQE.3.-.KINYOW74": {
+            "Tabla": "estados",
+            "Id": "OnOff-JOBQE.3.-.KINYOW74",
+            "Estado": "",
+            "Version": "",
+            "Origen": "dispositivoX",
+            "onoff": "1",
+            "ultimo": "1"
+        },
+        "OnOff-JOBQE.2.-.KINYOW74": {
+            "Tabla": "estados",
+            "Id": "OnOff-JOBQE.2.-.KINYOW74",
+            "Estado": "",
+            "Version": "",
+            "Origen": "dispositivoX",
+            "onoff": "1",
+            "ultimo": "1"
+        },
+        "OnOff-JOBQE.1.-.KINYOW74": {
+            "Tabla": "estados",
+            "Id": "OnOff-JOBQE.1.-.KINYOW74",
+            "Estado": "",
+            "Version": "",
+            "Origen": "dispositivoX",
+            "onoff": "0",
+            "ultimo": "1"
+        },
+        "KINYOW74.-.OnOff-JOBQE.3": {
+            "Tabla": "estados",
+            "Id": "KINYOW74.-.OnOff-JOBQE.3",
+            "Estado": "",
+            "Version": "",
+            "Origen": "dispositivoX",
+            "onoff": "0",
+            "ultimo": "1"
+        },
+        "KINYOW74.-.OnOff-JOBQE.2": {
+            "Tabla": "estados",
+            "Id": "KINYOW74.-.OnOff-JOBQE.2",
+            "Estado": "R",
+            "Version": "2000",
+            "Origen": "dispositivoX",
+            "onoff": "0",
+            "ultimo": "1"
+        },
+        "KINYOW74.-.OnOff-JOBQE.1": {
+            "Tabla": "estados",
+            "Id": "KINYOW74.-.OnOff-JOBQE.1",
+            "Estado": "",
+            "Version": "",
+            "Origen": "dispositivoX",
+            "onoff": "1",
+            "ultimo": "1"
+        },
+        "KINYOW74\\xc2\\xacOnOff-JOBQE.3": {
+            "Tabla": "estados",
+            "Id": "KINYOW74\\xc2\\xacOnOff-JOBQE.3",
+            "Estado": "R",
+            "Version": "2000",
+            "Origen": "dispositivoX",
+            "onoff": "0",
+            "ultimo": "1"
+        },
+        "KINYOW74\\xc2\\xacOnOff-JOBQE.2": {
+            "Tabla": "estados",
+            "Id": "KINYOW74\\xc2\\xacOnOff-JOBQE.2",
+            "Estado": "R",
+            "Version": "2000",
+            "Origen": "dispositivoX",
+            "onoff": "1",
+            "ultimo": "1"
+        },
+        "KINYOW74\\xc2\\xacOnOff-JOBQE.1": {
+            "Tabla": "estados",
+            "Id": "KINYOW74\\xc2\\xacOnOff-JOBQE.1",
+            "Estado": "R",
+            "Version": "2000",
+            "Origen": "dispositivoX",
+            "onoff": "1",
+            "ultimo": "1"
+        },
+        "FFH88": {
+            "Tabla": "estados",
+            "Id": "FFH88",
+            "Estado": "E",
+            "Version": "2000",
+            "Origen": "web",
+            "onoff": "0",
+            "ultimo": "1"
+        },
+        "PuerI-MUQVX.1": {
+            "Tabla": "estados",
+            "Id": "PuerI-MUQVX.1",
+            "Estado": "",
+            "Version": "",
+            "Origen": "dispositivoX",
+            "onoff": "0",
+            "ultimo": "1"
+        },
+        "OnOff-KRAPT.1": {
+            "Tabla": "estados",
+            "Id": "OnOff-KRAPT.1",
+            "Estado": "R",
+            "Version": "2000",
+            "Origen": "dispositivoX",
+            "onoff": "0",
+            "ultimo": "1"
+        },
+        "HtCoA-YSAPT.7": {
+            "Tabla": "estados",
+            "Id": "HtCoA-YSAPT.7",
+            "Estado": "R",
+            "Version": "2000",
+            "Origen": "dispositivoX",
+            "onoff": "0",
+            "ultimo": "1"
+        },
+        "HtCoA-YSAPT.6": {
+            "Tabla": "estados",
+            "Id": "HtCoA-YSAPT.6",
+            "Estado": "R",
+            "Version": "2000",
+            "Origen": "dispositivoX",
+            "onoff": "0",
+            "ultimo": "1"
+        },
+        "HtCoA-YSAPT.5": {
+            "Tabla": "estados",
+            "Id": "HtCoA-YSAPT.5",
+            "Estado": "R",
+            "Version": "2000",
+            "Origen": "dispositivoX",
+            "onoff": "0",
+            "ultimo": "1"
+        },
+        "HtCoA-YSAPT.4": {
+            "Tabla": "estados",
+            "Id": "HtCoA-YSAPT.4",
+            "Estado": "R",
+            "Version": "2000",
+            "Origen": "dispositivoX",
+            "onoff": "0",
+            "ultimo": "1"
+        },
+        "HtCoA-YSAPT.3": {
+            "Tabla": "estados",
+            "Id": "HtCoA-YSAPT.3",
+            "Estado": "R",
+            "Version": "2000",
+            "Origen": "dispositivoX",
+            "onoff": "0",
+            "ultimo": "1"
+        },
+        "HtCoA-YSAPT.2": {
+            "Tabla": "estados",
+            "Id": "HtCoA-YSAPT.2",
+            "Estado": "R",
+            "Version": "2000",
+            "Origen": "dispositivoX",
+            "onoff": "0",
+            "ultimo": "1"
+        },
+        "HtCoA-YSAPT.1": {
+            "Tabla": "estados",
+            "Id": "HtCoA-YSAPT.1",
+            "Estado": "R",
+            "Version": "2000",
+            "Origen": "dispositivoX",
+            "onoff": "0",
+            "ultimo": "1"
+        },
+        "MLH78": {
+            "Tabla": "estados",
+            "Id": "MLH78",
+            "Estado": "E",
+            "Version": "2000",
+            "Origen": "web",
+            "onoff": "0",
+            "ultimo": "1"
+        },
+        "PBK17": {
+            "Tabla": "estados",
+            "Id": "PBK17",
+            "Estado": "P",
+            "Version": "V201905",
+            "Origen": "web",
+            "onoff": "1",
+            "ultimo": "1"
+        },
+        "OnOff-JOBQE.1": {
+            "Tabla": "estados",
+            "Id": "OnOff-JOBQE.1",
+            "Estado": "",
+            "Version": "",
+            "Origen": "dispositivoX",
+            "onoff": "1",
+            "ultimo": "1"
+        },
+        "OnOff-JOBQE.2": {
+            "Tabla": "estados",
+            "Id": "OnOff-JOBQE.2",
+            "Estado": "R",
+            "Version": "2000",
+            "Origen": "dispositivoX",
+            "onoff": "1",
+            "ultimo": "1"
+        },
+        "OnOff-JOBQE.3": {
+            "Tabla": "estados",
+            "Id": "OnOff-JOBQE.3",
+            "Estado": "R",
+            "Version": "2000",
+            "Origen": "dispositivoX",
+            "onoff": "0",
+            "ultimo": "1"
+        },
+        "KINYOW74/HtCoA-YSAPT.1": {
+            "Tabla": "estados",
+            "Id": "KINYOW74/HtCoA-YSAPT.1",
+            "Estado": "R",
+            "Version": "2000",
+            "Origen": "dispositivoX",
+            "onoff": "0",
+            "ultimo": "1"
+        },
+        "KINYOW74/HtCoA-YSAPT.2": {
+            "Tabla": "estados",
+            "Id": "KINYOW74/HtCoA-YSAPT.2",
+            "Estado": "R",
+            "Version": "2000",
+            "Origen": "dispositivoX",
+            "onoff": "0",
+            "ultimo": "1"
+        },
+        "KINYOW74/HtCoA-YSAPT.3": {
+            "Tabla": "estados",
+            "Id": "KINYOW74/HtCoA-YSAPT.3",
+            "Estado": "R",
+            "Version": "2000",
+            "Origen": "dispositivoX",
+            "onoff": "0",
+            "ultimo": "1"
+        },
+        "KINYOW74/HtCoA-YSAPT.4": {
+            "Tabla": "estados",
+            "Id": "KINYOW74/HtCoA-YSAPT.4",
+            "Estado": "R",
+            "Version": "2000",
+            "Origen": "dispositivoX",
+            "onoff": "0",
+            "ultimo": "1"
+        },
+        "KINYOW74/HtCoA-YSAPT.5": {
+            "Tabla": "estados",
+            "Id": "KINYOW74/HtCoA-YSAPT.5",
+            "Estado": "R",
+            "Version": "2000",
+            "Origen": "dispositivoX",
+            "onoff": "0",
+            "ultimo": "1"
+        },
+        "KINYOW74/HtCoA-YSAPT.6": {
+            "Tabla": "estados",
+            "Id": "KINYOW74/HtCoA-YSAPT.6",
+            "Estado": "R",
+            "Version": "2000",
+            "Origen": "dispositivoX",
+            "onoff": "0",
+            "ultimo": "1"
+        },
+        "KINYOW74/HtCoA-YSAPT.7": {
+            "Tabla": "estados",
+            "Id": "KINYOW74/HtCoA-YSAPT.7",
+            "Estado": "R",
+            "Version": "2000",
+            "Origen": "dispositivoX",
+            "onoff": "0",
+            "ultimo": "1"
+        },
+        "KINYOW74/OnOff-KRAPT.1": {
+            "Tabla": "estados",
+            "Id": "KINYOW74/OnOff-KRAPT.1",
+            "Estado": "R",
+            "Version": "2000",
+            "Origen": "dispositivoX",
+            "onoff": "1",
+            "ultimo": "1"
+        },
+        "/LLDC9632568745213002522X/PuerI-MUQVX.1": {
+            "Tabla": "estados",
+            "Id": "/LLDC9632568745213002522X/PuerI-MUQVX.1",
+            "Estado": "R",
+            "Version": "2000",
+            "Origen": "dispositivoX",
+            "onoff": "0",
+            "ultimo": "1"
+        },
+        "KINYOW74/OnOff-JOBQE.1": {
+            "Tabla": "estados",
+            "Id": "KINYOW74/OnOff-JOBQE.1",
+            "Estado": "",
+            "Version": "",
+            "Origen": "dispositivoX",
+            "onoff": "1",
+            "ultimo": "1"
+        },
+        "KINYOW74/OnOff-JOBQE.3": {
+            "Tabla": "estados",
+            "Id": "KINYOW74/OnOff-JOBQE.3",
+            "Estado": "",
+            "Version": "",
+            "Origen": "dispositivoX",
+            "onoff": "0",
+            "ultimo": "1"
+        },
+        "KINYOW74/OnOff-JOBQE.2": {
+            "Tabla": "estados",
+            "Id": "KINYOW74/OnOff-JOBQE.2",
+            "Estado": "",
+            "Version": "",
+            "Origen": "dispositivoX",
+            "onoff": "0",
+            "ultimo": "1"
+        },
+        "KINYOW74/KINYOW74/OnOff-JOBQE.1": {
+            "Tabla": "estados",
+            "Id": "KINYOW74/KINYOW74/OnOff-JOBQE.1",
+            "Estado": "R",
+            "Version": "2000",
+            "Origen": "dispositivoX",
+            "onoff": "1",
+            "ultimo": "1"
+        },
+        "KINYOW74/KINYOW74/OnOff-JOBQE.2": {
+            "Tabla": "estados",
+            "Id": "KINYOW74/KINYOW74/OnOff-JOBQE.2",
+            "Estado": "R",
+            "Version": "2000",
+            "Origen": "dispositivoX",
+            "onoff": "0",
+            "ultimo": "1"
+        },
+        "KINYOW74/KINYOW74/OnOff-JOBQE.3": {
+            "Tabla": "estados",
+            "Id": "KINYOW74/KINYOW74/OnOff-JOBQE.3",
+            "Estado": "R",
+            "Version": "2000",
+            "Origen": "dispositivoX",
+            "onoff": "0",
+            "ultimo": "1"
+        },
+        "KINYOW74\u00acHtCoA-YSAPT.1": {
+            "Tabla": "estados",
+            "Id": "KINYOW74\u00acHtCoA-YSAPT.1",
+            "Estado": "R",
+            "Version": "2000",
+            "Origen": "dispositivoX",
+            "onoff": "0",
+            "ultimo": "1"
+        },
+        "KINYOW74\u00acHtCoA-YSAPT.2": {
+            "Tabla": "estados",
+            "Id": "KINYOW74\u00acHtCoA-YSAPT.2",
+            "Estado": "R",
+            "Version": "2000",
+            "Origen": "dispositivoX",
+            "onoff": "0",
+            "ultimo": "1"
+        },
+        "KINYOW74\u00acHtCoA-YSAPT.3": {
+            "Tabla": "estados",
+            "Id": "KINYOW74\u00acHtCoA-YSAPT.3",
+            "Estado": "R",
+            "Version": "2000",
+            "Origen": "dispositivoX",
+            "onoff": "0",
+            "ultimo": "1"
+        },
+        "KINYOW74\u00acHtCoA-YSAPT.4": {
+            "Tabla": "estados",
+            "Id": "KINYOW74\u00acHtCoA-YSAPT.4",
+            "Estado": "R",
+            "Version": "2000",
+            "Origen": "dispositivoX",
+            "onoff": "0",
+            "ultimo": "1"
+        },
+        "KINYOW74\u00acHtCoA-YSAPT.5": {
+            "Tabla": "estados",
+            "Id": "KINYOW74\u00acHtCoA-YSAPT.5",
+            "Estado": "R",
+            "Version": "2000",
+            "Origen": "dispositivoX",
+            "onoff": "0",
+            "ultimo": "1"
+        },
+        "KINYOW74\u00acHtCoA-YSAPT.6": {
+            "Tabla": "estados",
+            "Id": "KINYOW74\u00acHtCoA-YSAPT.6",
+            "Estado": "R",
+            "Version": "2000",
+            "Origen": "dispositivoX",
+            "onoff": "0",
+            "ultimo": "1"
+        },
+        "KINYOW74\u00acOnOff-KRAPT.1": {
+            "Tabla": "estados",
+            "Id": "KINYOW74\u00acOnOff-KRAPT.1",
+            "Estado": "R",
+            "Version": "2000",
+            "Origen": "dispositivoX",
+            "onoff": "0",
+            "ultimo": "1"
+        },
+        "/LLDC9632568745213002522X\u00acPuerI-MUQVX.1": {
+            "Tabla": "estados",
+            "Id": "/LLDC9632568745213002522X\u00acPuerI-MUQVX.1",
+            "Estado": "R",
+            "Version": "2000",
+            "Origen": "dispositivoX",
+            "onoff": "0",
+            "ultimo": "1"
+        },
+        "KINYOW74\u00acHtCoA-YSAPT.7": {
+            "Tabla": "estados",
+            "Id": "KINYOW74\u00acHtCoA-YSAPT.7",
+            "Estado": "R",
+            "Version": "2000",
+            "Origen": "dispositivoX",
+            "onoff": "0",
+            "ultimo": "1"
+        },
+        "KINYOW74\u00acOnOff-JOBQE.1": {
+            "Tabla": "estados",
+            "Id": "KINYOW74\u00acOnOff-JOBQE.1",
+            "Estado": "R",
+            "Version": "2000",
+            "Origen": "dispositivoX",
+            "onoff": "0",
+            "ultimo": "1"
+        },
+        "KINYOW74\u00acOnOff-JOBQE.2": {
+            "Tabla": "estados",
+            "Id": "KINYOW74\u00acOnOff-JOBQE.2",
+            "Estado": "R",
+            "Version": "2000",
+            "Origen": "dispositivoX",
+            "onoff": "0",
+            "ultimo": "1"
+        },
+        "KINYOW74\u00acOnOff-JOBQE.3": {
+            "Tabla": "estados",
+            "Id": "KINYOW74\u00acOnOff-JOBQE.3",
+            "Estado": "R",
+            "Version": "2000",
+            "Origen": "dispositivoX",
+            "onoff": "0",
+            "ultimo": "1"
+        },
+        "KINYOW74\u00acKINYOW74\\xc2\\xacOnOff-JOBQE.1": {
+            "Tabla": "estados",
+            "Id": "KINYOW74\u00acKINYOW74\\xc2\\xacOnOff-JOBQE.1",
+            "Estado": "R",
+            "Version": "2000",
+            "Origen": "dispositivoX",
+            "onoff": "0",
+            "ultimo": "1"
+        },
+        "KINYOW74\u00acKINYOW74\\xc2\\xacOnOff-JOBQE.2": {
+            "Tabla": "estados",
+            "Id": "KINYOW74\u00acKINYOW74\\xc2\\xacOnOff-JOBQE.2",
+            "Estado": "R",
+            "Version": "2000",
+            "Origen": "dispositivoX",
+            "onoff": "0",
+            "ultimo": "1"
+        },
+        "KINYOW74\u00acKINYOW74\\xc2\\xacOnOff-JOBQE.3": {
+            "Tabla": "estados",
+            "Id": "KINYOW74\u00acKINYOW74\\xc2\\xacOnOff-JOBQE.3",
+            "Estado": "R",
+            "Version": "2000",
+            "Origen": "dispositivoX",
+            "onoff": "0",
+            "ultimo": "1"
+        },
+        "PuerI-NPLUKInIKINYOW74.1": {
+            "Tabla": "estados",
+            "Id": "PuerI-NPLUKInIKINYOW74.1",
+            "Estado": "",
+            "Version": "",
+            "Origen": "dispositivoX",
+            "onoff": "1",
+            "ultimo": "1"
+        },
+        "HtCoA-YSAPT.1.-.KINYOW74": {
+            "Tabla": "estados",
+            "Id": "HtCoA-YSAPT.1.-.KINYOW74",
+            "Estado": "R",
+            "Version": "2000",
+            "Origen": "dispositivoX",
+            "onoff": "0",
+            "ultimo": "1"
+        },
+        "HtCoA-YSAPT.2.-.KINYOW74": {
+            "Tabla": "estados",
+            "Id": "HtCoA-YSAPT.2.-.KINYOW74",
+            "Estado": "R",
+            "Version": "2000",
+            "Origen": "dispositivoX",
+            "onoff": "0",
+            "ultimo": "1"
+        },
+        "HtCoA-YSAPT.3.-.KINYOW74": {
+            "Tabla": "estados",
+            "Id": "HtCoA-YSAPT.3.-.KINYOW74",
+            "Estado": "R",
+            "Version": "2000",
+            "Origen": "dispositivoX",
+            "onoff": "0",
+            "ultimo": "1"
+        },
+        "HtCoA-YSAPT.4.-.KINYOW74": {
+            "Tabla": "estados",
+            "Id": "HtCoA-YSAPT.4.-.KINYOW74",
+            "Estado": "R",
+            "Version": "2000",
+            "Origen": "dispositivoX",
+            "onoff": "0",
+            "ultimo": "1"
+        },
+        "HtCoA-YSAPT.5.-.KINYOW74": {
+            "Tabla": "estados",
+            "Id": "HtCoA-YSAPT.5.-.KINYOW74",
+            "Estado": "R",
+            "Version": "2000",
+            "Origen": "dispositivoX",
+            "onoff": "0",
+            "ultimo": "1"
+        },
+        "HtCoA-YSAPT.6.-.KINYOW74": {
+            "Tabla": "estados",
+            "Id": "HtCoA-YSAPT.6.-.KINYOW74",
+            "Estado": "R",
+            "Version": "2000",
+            "Origen": "dispositivoX",
+            "onoff": "0",
+            "ultimo": "1"
+        },
+        "HtCoA-YSAPT.7.-.KINYOW74": {
+            "Tabla": "estados",
+            "Id": "HtCoA-YSAPT.7.-.KINYOW74",
+            "Estado": "R",
+            "Version": "2000",
+            "Origen": "dispositivoX",
+            "onoff": "0",
+            "ultimo": "1"
+        },
+        "Valve-NJSRH.1.-.KINYOW74": {
+            "Tabla": "estados",
+            "Id": "Valve-NJSRH.1.-.KINYOW74",
+            "Estado": "R",
+            "Version": "2000",
+            "Origen": "dispositivoX",
+            "onoff": "0",
+            "ultimo": "1"
+        },
+        "Valve-NJSRH.2.-.KINYOW74": {
+            "Tabla": "estados",
+            "Id": "Valve-NJSRH.2.-.KINYOW74",
+            "Estado": "R",
+            "Version": "2000",
+            "Origen": "dispositivoX",
+            "onoff": "0",
+            "ultimo": "1"
+        },
+        "Valve-NJSRH.3.-.KINYOW74": {
+            "Tabla": "estados",
+            "Id": "Valve-NJSRH.3.-.KINYOW74",
+            "Estado": "R",
+            "Version": "2000",
+            "Origen": "dispositivoX",
+            "onoff": "0",
+            "ultimo": "1"
+        },
+        "PuerI-RLYVVInIKINYOW74.1": {
+            "Tabla": "estados",
+            "Id": "PuerI-RLYVVInIKINYOW74.1",
+            "Estado": "R",
+            "Version": "2000",
+            "Origen": "dispositivoX",
+            "onoff": "0",
+            "ultimo": "1"
+        }
+    }
+]

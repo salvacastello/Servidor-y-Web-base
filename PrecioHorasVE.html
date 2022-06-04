@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Bite flex CONFIGURACION</title>
+  <link rel="icon" type="image/png"  href="favicon.ico">
+  <meta httpequiv="ContentType" content="text/html, width=device-width, initial-scale=1" charset="UTF-8">
+  <link href="stilobase.css" rel="stylesheet" type="text/css">
+  <script src="funcionesbase.js"></script> 
+</head>
+
+<body>
+  <div id="fondoAyuda"  style= "width:100%;height: 850px; background-color: black;position:absolute;
+  left:0px" >
+  <img src="https://image.freepik.com/foto-gratis/fondo-piso-madera_53876-88628.jpg"  
+  class="w3-opacity-med" style= "width: 130%; height: 1050px; top:0px; left:-100px;">
+  <form action="PROCESACONFIGURACION" method="POST">
+    <fieldset style="top:10px; left: 0px; position: absolute;">
+      <legend id="phve">Precio Horas:</legend>
+
+      0--<input type="text" class="HVE" readonly><br>
+      1--<input type="text" class="HVE" readonly><br>
+      2--<input type="text" class="HVE" readonly><br>
+      3--<input type="text" class="HVE" readonly><br>
+      4--<input type="text" class="HVE" readonly><br>
+      5--<input type="text" class="HVE" readonly><br>
+      6--<input type="text" class="HVE" readonly><br>
+      7--<input type="text" class="HVE" readonly><br>
+      8--<input type="text" class="HVE" readonly><br>
+      9--<input type="text" class="HVE" readonly><br>
+      10-<input type="text" class="HVE" readonly><br>
+      11-<input type="text" class="HVE" readonly><br>
+      12-<input type="text" class="HVE" readonly><br>
+      13-<input type="text" class="HVE" readonly><br>
+      14-<input type="text" class="HVE" readonly><br>
+      15-<input type="text" class="HVE" readonly><br>
+      16-<input type="text" class="HVE" readonly><br>
+      17-<input type="text" class="HVE" readonly><br>
+      18-<input type="text" class="HVE" readonly><br>
+      19-<input type="text" class="HVE" readonly><br>
+      20-<input type="text" class="HVE" readonly><br>
+      21-<input type="text" class="HVE" readonly><br>
+      22-<input type="text" class="HVE" readonly><br>
+      23-<input type="text" class="HVE" readonly><br>
+
+    </fieldset>
+    <fieldset id ="phvecuadro" style="top:10px; left: 360px; position: absolute;">
+      <legend id="phvemanana">Precio Horas:</legend>
+
+      0--<input type="text" class="HVEM" readonly><br>
+      1--<input type="text" class="HVEM" readonly><br>
+      2--<input type="text" class="HVEM" readonly><br>
+      3--<input type="text" class="HVEM" readonly><br>
+      4--<input type="text" class="HVEM" readonly><br>
+      5--<input type="text" class="HVEM" readonly><br>
+      6--<input type="text" class="HVEM" readonly><br>
+      7--<input type="text" class="HVEM" readonly><br>
+      8--<input type="text" class="HVEM" readonly><br>
+      9--<input type="text" class="HVEM" readonly><br>
+      10-<input type="text" class="HVEM" readonly><br>
+      11-<input type="text" class="HVEM" readonly><br>
+      12-<input type="text" class="HVEM" readonly><br>
+      13-<input type="text" class="HVEM" readonly><br>
+      14-<input type="text" class="HVEM" readonly><br>
+      15-<input type="text" class="HVEM" readonly><br>
+      16-<input type="text" class="HVEM" readonly><br>
+      17-<input type="text" class="HVEM" readonly><br>
+      18-<input type="text" class="HVEM" readonly><br>
+      19-<input type="text" class="HVEM" readonly><br>
+      20-<input type="text" class="HVEM" readonly><br>
+      21-<input type="text" class="HVEM" readonly><br>
+      22-<input type="text" class="HVEM" readonly><br>
+      23-<input type="text" class="HVEM" readonly><br>
+
+    </fieldset>
+  </form>
+  <script>
+//*****************************************************************
+obtieneConfiguracion(JSON.parse(sessionStorage.dato));
+//*****************************************************************
+  </script>
+</body>
+
+</html>

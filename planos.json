@@ -1,0 +1,28 @@
+[
+    {
+        "PKB8": {
+            "Tabla": "planos",
+            "Id": "PKB8",
+            "Estado": "P",
+            "Version": "V201905",
+            "Origen": "web",
+            "Nomdibujofondo": "PLANTA BAJA",
+            "Dibujofondo": "http://banyeres.duckdns.org:56320/MKB93LPP45.png\n",
+            "Ordendibujofondo": "0.5|0",
+            "Eliminar": "0",
+            "ultimo": "1"
+        },
+        "EKL14": {
+            "Tabla": "planos",
+            "Id": "EKL14",
+            "Estado": "P",
+            "Version": "V201905",
+            "Origen": "web",
+            "Nomdibujofondo": "GENERAL",
+            "Dibujofondo": "http://xurlfavicon/PPJ26LNJ81.jpeg",
+            "Ordendibujofondo": "1.5|1",
+            "Eliminar": "0",
+            "ultimo": "1"
+        }
+    }
+]

@@ -1,0 +1,7 @@
+def despiertasiempreque(datoC): # activa los destinos de un interruptor
+    # NOTA: ESTE PROCESO PUEDE ENTRAR EN UN BUCLE SIN FIN SI EL INTERRUPTOR SE LLAMA A SI MISMO O ENTRA EN 
+    # UN PROCESO CICLICO
+
+https://www.esios.ree.es/es/descargas?date_type=publicacion&start_date=16-03-2022&end_date=16-03-2022
+
+https://api.esios.ree.es/archives/71/download?date_type=publicacion&end_date=2022-03-16T23%3A59%3A59%2B00%3A00&locale=es&start_date=2022-03-16T00%3A00%3A00%2B00%3A00

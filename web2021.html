@@ -1,0 +1,621 @@
+<!DOCTYPE html>
+<html>
+<title>DOMOCAS...</title>
+<head>
+  
+  <link rel="icon" type="image/png"  href="favicon.ico">
+  <meta httpequiv="ContentType" content="text/html, width=device-width, initial-scale=1" charset="UTF-8">
+  <link href="stilobase.css" rel="stylesheet" type="text/css">
+  <script src="funcionesbase.js"></script>  
+
+</head>
+
+<body>
+  <div id="tx"></div>
+  <div id="fondo0"><img id="fondo00"></div>
+  <div id="cuadro"></div>
+  <div id="fotosicono">
+    <h3>
+      <center>Imágenes de almacón</center>
+    </h3>
+    <div id="fotosicono1"></div><br>
+    <div id="fotosicono2"></div>
+  </div>
+
+  <div id="mensaje" style="height: 650px;width: 800px;">
+    <iframe id="webmensaje" src=""  style="height: 100%;width: 100%;background-color:#DCDCDC; 
+    border-radius: 8px;" title="Parametros"></iframe>
+    <input type="button" style="height: 35px;top:625px ; position: absolute;
+    width: 395px;background-color:#244dd1; left: 0px;" onclick="salmensaje()" value="Regresar al Programa">
+    <input type="button"  style="height: 35px;top:625px ; position: absolute;
+    width: 395px;background-color:#244dd1; left: 400px;" id="AyudaParametros" onclick="ayuda(this)" value="Información">
+  </div>
+  <div id="mensaje2" style="height: 625px;width: 800px;">
+    <iframe id="webmensaje2" src=""  style="height: 100%;width: 100%;background-color:#DCDCDC; 
+    border-radius: 8px;" title="Información"></iframe>
+    <input type="button" style="height: 35px;top:600px ; position: absolute;
+    width: 800px;background-color:#abd8a7; color: rgba(255, 7, 7, 0.699); font-size: medium;
+    left: 0px;" onclick="salmensaje2()" value="Regresar al Programa">
+  </div>
+
+  <div id="cuadrorelaciones">
+    <h3>
+      <center>Relaciones y uniones del dispositivo--<div id="dispositivo0" style="display:inline-block"></div>
+      </center>
+    </h3>
+    <div id="rb1">
+      <div id="rb11">
+        <h5>
+          <center>Seleccionar entrada de Icono</center>
+        </h5>
+        <select size="10" id="resel1" class="reselect" ondblclick="gestionrelacion(this)"></select>
+        <input type="button" id="botonre1" value="Selecciona Icono" onclick="gestionrelacion(this)" class="botonre">
+
+        <h5>
+          <center>Seleccionar entrada de Dispositivo externo</center>
+        </h5>
+        <select size="10" id="resel2" class="reselect" ondblclick="gestionrelacion(this)"></select>
+        <input type="button" id="botonre2" value="Selecciona Entrada" onclick="gestionrelacion(this)" class="botonre">
+      </div>
+      <div id="rb12">
+        <h4>
+          <center>Entradas seleccionadas.</center>
+        </h4>
+        <select size="24" id="resel3" class="reselect" onclick="gestionrelacion(this)"
+          onchange="gestionrelacion(this)"></select>
+
+        <input type="button" id="botonre4" value="Elimina selección" onclick="gestionrelacion(this)" class="botonre">
+      </div>
+    </div>
+    <div id="rb2">
+      <div id="rb21">
+        <center>1</center>
+        <h4>
+          <center>Acción/Condición</center>
+        </h4>
+        <select size="3" id="resel12" class="reselect" ondblclick="gestionrelacion(this)"
+          onchange="actualizaeventos(this)">
+          <option value=0 selected>cuando</option>
+          <option value=1>siempre que</option>
+          <option value=2>interruptor</option>
+        </select>
+        <input type="button" id="botonre12" value="Acepta condición" onclick="gestionrelacion(this)" class="botonre">
+        <p>
+          <center>Eventos</center>
+        </p>
+        <select size="6" id="resel11" class="reselect" ondblclick="gestionrelacion(this)"
+          onchange="actualizaeventos(this)">
+          <option value=0 selected>se pone a On</option>
+          <option value=1>se pone a Off</option>
+          <option value=2>supera VALOR Rf</option>
+          <option value=3>minora VALOR Rf</option>
+          <option value=4>cambia el VALOR</option>
+          <option value=5>REGLA Desactivada</option>
+        </select>
+        <input type="button" id="botonre11" value="Acepta evento" onclick="gestionrelacion(this)" class="botonre">
+
+        <div id="rb25">
+          <h4>
+            <center>Texto de la regla completa. Regla seleccionada para edición:</center>
+          </h4>
+          <center>
+            <h5>
+              <div id="textoreglaseleccionada"></div>
+            </h5>
+          </center>
+          <select size="5" id="resel0" class="reselect" onchange="gestionrelacion(this)"
+            ondblclick="gestionrelacion(this)"></select>
+          <input type="button" id="botonre01" value="Guardar Reglas" onclick="gestionrelacion(this)" class="botonre"
+            style="width:30%">
+          <input type="button" id="botonre02" value="Salir (no olvide guardar)" onclick="gestionrelacion(this)"
+            class="botonre" style="width:30%">
+          <input type="button" id="relaciones" value="Información" onclick="ayuda(this)" class="botonre" style="width:30%">
+        </div>
+      </div>
+      <div id="rb22">
+        <center>2</center>
+        <h4>
+          <center>Retardo en segundos</center>
+        </h4>
+        <center><input type="number" id="botonre21" style="padding:10px;height:39px;width:70%"></center>
+        <input type="button" id="botonre22" value="Acepta retardo" onclick="gestionrelacion(this)"
+          class="botonre"><br><br><br>
+
+        <div id="rb211" style="display:none">
+          <center><label for="botonre23">Valor de referencia (Rf)</label></center>
+          <input type="range" onmousemove="gestionrelacion(this)" onchange="gestionrelacion(this)"
+            class="slider grid-item item32" id="botonre23" min="0" max="100" value="0" style="height:37px">
+          <center>Factor escala---Valor</center>
+          <center><input type="number" id="botonre241" style="padding:10px;height:39px;width:35%" value=100
+              onchange="gestionrelacion(this)">---<input type="number" id="botonre242"
+              style="padding:10px;height:39px;width:35%" readonly></center>
+          <input type="button" id="botonre25" value="Acepta valores" onclick="gestionrelacion(this)" class="botonre">
+        </div>
+      </div>
+      <div id="rb23">
+        <center>3</center>
+        <h4>
+          <center>Pone la salida (Icono actual) a</center>
+        </h4>
+        <select size="5" id="resel31" class="reselect" ondblclick="gestionrelacion(this)"
+          onchange="actualizaeventos(this)">
+          <option value=0>pone la salida a On</option>
+          <option value=1>pone la salida a Off</option>
+          <option value=2>pone la salida al Valor de entrada</option>
+          <option value=3>establece valor de salida</option>
+          <option value=4>anula regla</option>
+        </select>
+        <input type="button" id="botonre31" value="Acepta estado" onclick="gestionrelacion(this)" class="botonre">
+
+        <div id="rb311" style="display:none">
+          <center><label for="botonre33">Valor de referencia (Rf)</label></center>
+          <input type="range" onmousemove="gestionrelacion(this)" onchange="gestionrelacion(this)"
+            class="slider grid-item item32" id="botonre33" min="0" max="100" value="0" style="height:37px">
+          <center>Factor escala---Valor</center>
+          <center><input type="number" id="botonre341" style="padding:10px;height:39px;width:35%" value=100
+              onchange="gestionrelacion(this)">---<input type="number" id="botonre342"
+              style="padding:10px;height:39px;width:35%" readonly></center>
+          <input type="button" id="botonre35" value="Acepta valores" onclick="gestionrelacion(this)" class="botonre">
+        </div>
+      </div>
+
+      <div id="rb24">
+        <center>4</center>
+        <h4>
+          <center>Si se da también (unido a)</center>
+        </h4>
+        <select size="10" id="resel4" class="reselect" ondblclick="gestionrelacion(this)">
+          <option>SIN unión</option>
+        </select>
+
+        <input type="button" id="botonre41" value="Acepta unión" onclick="gestionrelacion(this)" class="botonre">
+      </div>
+    </div>
+  </div>
+
+  <div id="cajaprograma">
+    <div id="cajaprograma0">
+      <input type="button" id="nuevoprograma" value="Nuevo Programa" onclick="nuevalineaprograma()" style="width:26%">
+      <input type="button" id="guardardatospr" value="Guardar Datos" onclick="salvarlineaprograma(this)"
+        style="width:24%">
+      <input type="button" id="cancelaprograma" value="Cancelar" onclick="salvarlineaprograma(this)" style="width:24%">
+      <input type="button" id="programacion_de_tiempos" value="Información" onclick="ayuda(this)" style="width:24%">
+    </div>
+    <div id="cajaprogramaC" class="cajasalargadas">
+      <div id="cajaprograma1" class="cajaprograma">
+        <div class="cajaprogramaItem1">
+          <label>Actuar sobre el dispositivo x..</label>
+          <select class="csformasdetiempos" id="formasdetiempos1" onchange="selectordetiempos(this)">
+            <option value="0">a) Dentro de:(en Horas,Minutos)</option>
+            <option value="1">b) En esta hora:(Horas,Minutos)</option>
+            <option value="2">c) Al amanecer con este desfase:(en Horas,Minutos)</option>
+            <option value="3">d) Al atardecer con este desfase:(en Horas,Minutos)</option>
+			      <option value="4">e) Especial VE</option>
+          </select>
+          <label  id="VE1">Desde - Hasta - Horas * Valida</label>
+          <label  id="NOVE1">Horas - Minutos * Valida</label>
+          <br>
+          <input type="number" Id="dttmp1" class="datodetiemposhm" min="0" max="23">
+          <input type="number" Id="segft1" class="datodetiemposhm" min="0" max="60">
+          <input type="number" Id="dttma1" class="datodetiemposhm" min="0" max="24">
+          <input type="number" Id="dttmb1" class="datodetiemposhm" min="0" max="24">
+          <input type="button" class="datodetiemposhm" value="Acepta"
+            style="background-color:rgba(100,100, 100, 0.8); width:20%">
+
+
+          <br> <br>
+          <div class="cuadrodia" id="cuadrodial1" onclick="seleccionadia(this)">L</div>
+          <div class="cuadrodia" id="cuadrodiam1" onclick="seleccionadia(this)">M</div>
+          <div class="cuadrodia" id="cuadrodiax1" onclick="seleccionadia(this)">X</div>
+          <div class="cuadrodia" id="cuadrodiaj1" onclick="seleccionadia(this)">J</div>
+          <div class="cuadrodia" id="cuadrodiav1" onclick="seleccionadia(this)">V</div>
+          <div class="cuadrodia" id="cuadrodias1" onclick="seleccionadia(this)">S</div>
+          <div class="cuadrodia" id="cuadrodiad1" onclick="seleccionadia(this)">D</div><br><br>
+            <div id="ONOFF1">
+              <label>OFF---------Acción:----------ON</label><br>
+              <input type="range" Id="dttmpv1" class="datodetiemposhm" style="width:90%" min="0" max="100" value="0"
+              onchange="accionprograma(this)">
+              <input type="number" Id="dttmpv1imagen" max="100" min="0" style="height:35px;width:70px;padding:12px"
+              value="0" oninput="accionprograma(this)" onfocusout="accionprograma(this)"> %
+            </div>
+            <div id="ONOFFlabel1">
+              Desde: Hora de inicio de carga<br> 
+              Hasta: Hora de fin de carga<br> 
+              Horas: Horas de carga de VE entre inicio y fin de carga<br> 
+              <input type="button" class="datodetiemposhm" id="informaPreLuz1" value="Precio de luz por Hora PCPV"
+              style="background-color:rgba(156, 65, 69, 0.8)" onclick="ayuda(this)">
+            </div>
+          </div>
+
+        <div class="cajaprogramaItem2">
+          <label>Programación válida desde:</label><br><br>
+          <input type="date" class="datodetiempos" id="validadesde"> <br><br>
+          <label>Programación válida hasta: </label><br><br>
+          <input type="date" class="datodetiempos" id="validahasta"><br>
+          <input type="button" value="Acepta fechas"><br>
+          <label>CP</label>
+          <h4 id="codigoprograma0" style="display:inline-block">--</h4>
+          <h4 id="codigoprograma1" class="codigodeprograma" style="display:inline-block"></h4>
+          <input type="button" id="eliminaprograma1qwert" value="Elimina Programa" onclick="insertafechapr(this)">
+        </div>
+
+        <div class="cajaprogramaItem3">
+          <label>Incluye los días: </label>
+          <input type="date" id="datodetiempos1qwert"> <br>
+          <input type="button" id="aceptafecha1qwert" value="Acepta Fecha" onclick="insertafechapr(this)">
+          <input type="button" id="eliminafecha1qwert" value="Elimina Fecha" onclick="insertafechapr(this)"> <br><br>
+          <select size="6" id="listamuestrafecha1qwert" class="cajafechas"></select>
+        </div>
+        <div class="cajaprogramaItem4">
+          <label>Estos días NO: </label>
+          <input type="date" id="datodetiempos2qwert"><br>
+          <input type="button" id="aceptafecha2qwert" value="Acepta Fecha" onclick="insertafechapr(this)">
+          <input type="button" id="eliminafecha2qwert" value="Elimina Fecha" onclick="insertafechapr(this)"> <br><br>
+          <select size="6" id="listamuestrafecha2qwert" class="cajafechas"></select>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="cuadrofondo"><img id="cuadrofondo00"></div>
+  <div class="topnav" id="myTopnav" draggable="false">
+    <select type="text" onchange="menuseleccion('planonumero')" id="numplanomenu1"></select>
+    <a class="posicionar active" href="javascript:menuseleccion('posicionar')" draggable="false"> Posicionar</a>
+    <a class="nuevo" href="javascript:menuseleccion('nuevo')" draggable="false">Nuevo</a>
+    <a class="configurar" href="javascript:menuseleccion('configurar')" draggable="false">Configurar</a>
+    <a class="planoanterior" style="font-size:200%;" href="javascript:menuseleccion('planoanterior')"
+      draggable="false">&#9754</a>
+    <a class="planonumero" id="numplanomenu" draggable="false"></a>
+
+    <a class="planosiguiente" style="font-size:200%;" href="javascript:menuseleccion('planosiguiente')"
+      draggable="false">&#9755</a>
+    <a class="planosiguiente" id="ayudamenugeneral" href="javascript:ayuda(document.getElementById('myTopnav'))"
+      draggable="false">Información</a>
+  </div>
+
+  <div id="nuevo">
+    <div class="btn-group">
+      <button style="background:#aa1100; color:white; font:bold" onclick="menuAltas('terminar')">Posicionar</button>
+      <button onclick="menuAltas('Iluminación')">Iluminación</button>
+      <button onclick="menuAltas('Calefacción')">Calefacción</button>
+      <button onclick="menuAltas('Persianas')">Persianas</button>
+      <button onclick="menuAltas('Estores')">Estores</button>
+      <button onclick="menuAltas('Toldos')">Toldos</button>
+      <button onclick="menuAltas('Puertas')">Puertas</button>
+      <button onclick="menuAltas('Agua')">Agua</button>
+      <button onclick="menuAltas('Riego')">Riego</button>
+      <button onclick="menuAltas('Otros')">Otros</button>
+    </div>
+  </div>
+
+  <div id="configurar1">
+    <div class="btn-group">
+      <button onclick="menuConfigurar('general')">General</button>
+      <button onclick="menuConfigurar('clases')">Clases</button>
+      <button onclick="menuConfigurar('parametros')">Parámetros</button>
+    </div>
+  </div>
+
+  <div id="cuadroNuevaImagen">
+    <div id="posclase" style="background-color:lightnarrow;height:100%;width:100%">
+      <h4>
+        <center>BUSCAR E INTRODUCIR UNA IMAGEN
+      </h4>
+      </center>
+      <input type="button" class="buscaimagen" value="Seleccionar Icono de almacón" style="width:48%;"
+        onclick="seleccionfile('almacen')">
+
+      <input type="file" class="botonfiles" id="botonfiles" name="botonfiles"> <label for="botonfiles"
+        style="text-align:center;width:48%;font-size:12px;">Seleccionar Icono LOCAL</label>
+
+      <p class="buscaimagen" style="width:18%;display:inline-block"> URL (http):</p>
+      <input type="text" class="buscaimagen" id="fileticono" style="position:relative;width:78%;display:inline-block">
+      <input type="button" class="buscaimagen" value="Aceptar archivo" onclick="seleccionfile('aceptar')"
+        style="width:48%;background-color:blue;">
+      <input type="button" class="buscaimagen" value="Cancelar" style="width:48%;background-color:grey"
+        onclick="seleccionfile('cancelar')">
+    </div>
+  </div>
+
+  <div id="cuadroprogreso">
+    <div class="progress">
+      <h4>
+        <center>Progreso de copia
+      </h4>
+      </center>
+      <progress id="barraprogreso" max="100" value="0"></progress>
+      <center>
+        <div id=sbarraprogreso></div>
+      </center>
+
+    </div><br>
+    <input type="button" class="buscaimagen" value="Cancelar Foto" style="width:48%;background-color:grey"
+      onclick="seleccionfile('cancelacopia')">
+    <span id="NombreFicherodeDescarga" style="padding: 15px">Nombre del fichero</span>
+
+  </div>
+
+
+  <div id="editaclases">
+    <h2 align="left">Edición de Clases</h2>
+    <label>Clase</label>
+    <select type="text" style="width:30%" class="xedicionclase" id="claseclase"
+      onchange="seleccionaclase(this)"></select>
+    <label for="fraseclase">Palabras o frases clave para activación por voz</label>
+    <input type="text" class="xedicionclase" id="fraseclase" name="frasedelclase"
+      placeholder="Frase con el que se identifica este icono"><br><br><br>
+    <div id=editacolorclases></div>
+    <div id="editaclasesbotones">
+      <input type="button" id="guardclase" value="Guardar y Salir" onclick="editaclases(this)"
+        style="background-color:powderblue;color:black;font-weight:bold;width:32%">
+      <input type="button" id="canceclase" value="Cancelar" onclick="editaclases(this)"
+        style="background-color:lightgrey;color:black;font-weight:bold;width:32%">
+      <input type="button" id="definicion de clases" value="Información" onclick="ayuda(this)"
+        style="background-color:powderblue;color:black;font-weight:bold;width:32%">
+    </div>
+  </div>
+
+  <div id="edicionicono">
+    
+    <h2 style="padding-left: 30px;">Edición Icono</h2>
+    <div id="iimagenicono">
+      <input type="image" id="imagenicono" src="" width="50%" onclick="cambiaImagen(1)" height="50%">
+    </div>
+    <label for="nombreicono">Nombre del Icono</label>
+    <input type="text" class="xedicionicono" id="nombreicono" name="nombredelicono" placeholder="Nombre del Icono..">
+    <label for="fraseicono">Palabras o frases clave para activación por voz</label>
+    <input type="text" class="xedicionicono" id="fraseicono" name="frasedelicono"
+      placeholder="Frase con el que se identifica este icono">
+    <div id="idlugaricono">
+
+      <label for="lugaricono">Zonas o grupos que asocian Iconos</label>
+      <textarea type="text" rows="4" cols="48" class="xedicionicono" id="lugaricono" name="lugardelicono"
+        placeholder="Habitación, sala, exterior etc.. (separado por ',')"
+        style="border-radius:5px; display:block"></textarea>
+    </div>
+    <div class="alinear1" style="width:16%;left:1%">
+      <label for="tipoeicono" id="alinear">Tipo de entrada</label>
+      <input type="text" class="xedicionicono" id="tipoeicono" name="tipo" style="width:98%" readonly>
+    </div>
+    <div class="alinear1" style="width:16%;left:1%">
+      <label for="tiposicono" id="alinear">Tipo de Salida</label>
+      <input type="text" class="xedicionicono" id="tiposicono" name="tipo" style="width:98%" readonly>
+    </div>
+    <div class="alinear1" style="width:13%;left:1%">
+      <label id="alinear">Clase</label>
+      <select type="text" style="width:98%" class="xedicionicono" id="claseicono" name="clasedelicono"></select>
+    </div><br>
+    <div class="alinear1" style="width:22%;left:1%">
+      <label for="idicono">Código Identificador del Icono</label>
+      <input type="text" class="xedicionicono" id="idicono" style="width:98%" name="iddelicono"
+        placeholder="Código asignado por el sistema" readonly>
+    </div>
+    <div class="alinear1" style="width:8%;left:1%">
+      <label for="planoicono">Cód.Plano</label>
+      <select class="xedicionicono" id="planoicono" style="width:98%" name="planodelicono"
+        onchange="obtennombreplanoicono(this)"></select>
+    </div>
+    <div class="alinear1" style="width:15%;left:1%">
+      <label for="nombreplanoicono">Nombre Plano</label>
+      <input type="text" class="xedicionicono" id="nombreplanoicono" style="width:100%" name="planodelicono" readonly>
+    </div>
+    <br>
+    <label for="urlicono">URL de la imagen del Icono</label>
+    <input type="text" class="xedicionicono" id="urlicono" name="urldelicono" placeholder="URL de este icono" readonly>
+
+
+    <div class="alinear1" style="width:300px;left:1%">
+    <label for="enlaceicono">Código de enlace del dispositivo</label>
+    <select style="width: 280px;height: 30px;" class="xedicionicono" id="enlaceicono" name="enlace">
+      <option value="Sin enlace">Sin enlace</option>
+    </select>
+  </div>
+
+      <input type="button" style="width: 240px;color: darkblue; height: 30px;" value="Parámetros dispositivo" 
+      id = "parametrosPersiana.html" onclick='paraventanaSelf(this)'>
+      
+    <div id="ccoloronoff" style="z-Index:20"></div>
+
+    <div> 
+      
+      <br>
+      <label for="email">E-mail..</label>
+      <input type="email"  class="xedicionicono" id="email" name="email" style="width: 40%;height:25px;">
+
+      <label for="informar">Informa</label>
+      <input type="checkbox" style="width: 20px;height: 20px;" id="informar" name="informar" value="X">
+      <br>
+      <br>
+    </div>
+
+    <div id="botonesguardaredicioniconos">
+      <input type="button" id="guardicono" value="Guardar y Salir" onclick="cambiatamano(this)"
+        style="width:24%;background-color:powderblue;color:black;font-weight:bold">
+      <input type="button" id="canceicono" value="Cancelar" onclick="cambiatamano(this)"
+        style="width:24%;background-color:lightgrey;color:black;font-weight:bold">
+      <input type="button" id="elimicono" value="Eliminar Icono" onclick="cambiatamano(this)"
+        style="width:24%;background-color:red;color:white;font-weight:bold">
+      <input type="button" id="edicion de iconos" value="Información" onclick="ayuda(this)"
+        style="width:24%;background-color:powderblue;color:black;font-weight:bold">
+    </div>
+  </div>
+
+  <div class="caja">
+    <div class="grid-container">
+      <button class="grid-item item0"><img src="" class="grid-item item1" onclick="pec('consulta')"></button>
+      <button class="grid-item item2" onclick="pec('intensidad')">
+        <H1 class="nombreImagen">NOMBRE</H1>
+      </button>
+      <button class="grid-item item31" onclick="pec('off')">
+        <H3>Off</H3>
+      </button>
+      <input type="range" id="intensidad" min="0" max="100" value="0" class="slider grid-item item32"
+        ondblclick="pec('intensidad')">
+      <button class="grid-item item33" onclick="pec('on')">
+        <H3>ON</H3>
+      </button>
+      <button class="grid-item item4" onclick="pec('programacion')">
+        <H4>Programación</H4>
+      </button>
+      <button class="grid-item item5" onclick="pec('edicion')">
+        <H2>Edición</H2>
+      </button>
+      <button class="grid-item item6" onclick="pec('consultas')">
+        <H2>Relaciones</H2>
+      </button>
+    </div>
+  </div>
+
+  <div id="general">
+    <div id=tx2></div>
+    <img id="fondo" alt="fondo">
+    <img id="imagenplano" src="">
+
+    <div class="detalles">
+      <div class="alinear1">
+        <input type="button" id="anteriorplanta" value="Plano Anterior" onclick="generalplanos(this)"
+          style="width:100%;">
+      </div>
+
+      <div class="alinear1">
+        <select type="text" class="xedicionplanta" id="posplanta" onchange="generalplanos(this)"></select>
+      </div>
+
+      <div class="alinear1">
+        <input type="button" id="siguienteplanta" value="Plano Siguiente" onclick="generalplanos(this)"
+          style="width:100%">
+      </div>
+
+      <div class="alinear1">
+        <input type="button" id="nuevaplanta" value="Añadir Nuevo Plano" onclick="generalplanos(this)"
+          style="width:100%">
+      </div>
+
+      <div class="alinear1">
+        <input type="button" id="eliminaplanta" value="Elimina Plano" onclick="generalplanos(this)" style="width:100%">
+      </div>
+
+      <div class="alinear1">
+        <input type="button" id="cambiaplanta" value="Cambiar Plano" onclick="generalplanos(this)" style="width:100%;">
+      </div>
+
+      <div class="alinear1" style="width:33%">
+        <label for="nombreplanta">Nombre del plano</label>
+        <input type="text" class="xedicionplanta" id="nombreplanta" placeholder="Introduzca el nombre de la planta.."
+          style="width:100%" onchange="generalplanos(this)">
+      </div>
+
+      <div class="alinear1" style="width:15%">
+        <label for="codigoplanta">Código</label>
+        <input type="text" class="xedicionplanta" id="codigoplanta" placeholder="Código de plano" style="width:100%"
+          onchange="generalplanos(this)" readonly>
+      </div>
+
+      <div class="alinear1" style="width:17%">
+        <label for="ordenplanta" style="width:100%">Establece orden</label>
+        <input type="number" min="0" max="500" class="xedicionplanta" id="ordenplanta"
+          style="width:100%;padding:10px 20px" onchange="generalplanos(this)">
+      </div>
+
+      <div class="alinear1">
+        <input type="button" id="guardargeneral" value="Guardar Cambios" onclick="generalplanos(this)"
+          style="width:100%">
+        <input type="button" id="descartargeneral" value="Descartar Cambios" onclick="generalplanos(this)"
+          style="width:100%">
+      </div>
+    </div>
+
+    <div id="iconogeneral">
+      <p>TAMAÑO GENERAL Y OPACIDAD DE TODOS LOS ICONOS</p><br>
+      <div class="alinear1">
+        <label for="tamiconogeneral">Tamaño del Icono ......</label>
+        <input type="range" onchange="generalplanos(this)" class="inputgeneral slider grid-item item32"
+          id="tamiconogeneral" min="5" max="200" value="35"><br>
+        <label for="inciconogeneral">Incremento de tamaño</label>
+        <input type="range" onchange="generalplanos(this)" class="inputgeneral slider grid-item item32"
+          id="inciconogeneral" min="100" max="200" value="105"><br>
+        <label for="opciconogeneral">Opacidad del icono ....</label>
+        <input type="range" onchange="generalplanos(this)" class="inputgeneral slider grid-item item32"
+          id="opciconogeneral" min="10" max="100" value="100">
+      </div>
+    </div>
+
+    <img id="imageniconogeneral">
+
+    <div id="fondogeneral">
+      <p>OTROS EFECTOS</p><br>
+      <div class="alinear1" style="width:95%">
+        <label for="opcfondogeneral">Opacidad imagen de fondo</label>
+        <input type="range" onchange="generalplanos(this)" class="inputgeneral slider grid-item item32"
+          id="opcfondogeneral" min="0" max="100" value="85">
+        <label for="opcimagengeneral">Opacidad imagen de plano</label>
+        <input type="range" onchange="generalplanos(this)" class="inputgeneral slider grid-item item32"
+          id="opcplanogeneral" min="0" max="100" value="100">
+      </div>
+      <div class="alinear1" style="width:218px">
+        <input type="button" id="cambiafondo" value="Cambia Fondo" onclick="generalplanos(this)">
+      </div>
+      <div class="alinear1">
+        <input type="button" id="configuracion de planos" value="Información" onclick="ayuda(this)">
+      </div>
+    </div>
+  </div>
+
+  <div id="oculta">
+    <div id="coloronoff" style="z-Index:10">
+      <label for="colonicono">Color ON</label>
+      <input type="color" class="xedicionicono" id="colonicono" name="colorondelicono" onchange="cambiatamano(this)"
+        onmouseover="muestracolx(this)">
+      <label for="coloficono">Color OFF</label>
+      <input type="color" class="xedicionicono" id="coloficono" name="coloroffdelicono" onchange="cambiatamano(this)"
+        onmouseover="muestracolx(this)">
+      <input type="image" id="imagen1icono">
+      <div id="dddefecicono">
+        <div id="ddefecicono">
+          <input type="button" class="xedicionicono" id="defecicono" name="defectodelicono"
+            onclick="establecedatospordefecto()" style="background-color:lightblue;color:black"
+            value="Valores de clase">
+        </div>
+      </div><br><br>
+      <label for="anchoicono">Ancho</label>
+      <input type="range" onchange="cambiatamano(this)" class="xedicionicono slider grid-item item32" id="anchoicono"
+        name="anchodelicono" min="20" max="600" value="100">
+      <label for="altoicono" style="padding:6px">Alto</label>
+      <input type="range" onchange="cambiatamano(this)" class="xedicionicono slider grid-item item32" id="altoicono"
+        name="altodelicono" min="20" max="600" value="100"><br>
+      <label for="giroxicono">Giro X</label>
+      <input type="range" onchange="cambiatamano(this)" class="xedicionicono slider grid-item item32" id="giroxicono"
+        name="giroxdelicono" min="-100" max="100" value="0">
+      <label for="giroyicono">GiroY</label>
+      <input type="range" onchange="cambiatamano(this)" class="xedicionicono slider grid-item item32" id="giroyicono"
+        name="giroydelicono" min="-100" max="100" value="0">
+      <label for="bandaicono">Banda</label>
+      <input type="range" onchange="cambiatamano(this)" class="xedicionicono slider grid-item item32" id="bandaicono"
+        name="bandadelicono" min="1" max="15" value="3">
+    </div>
+  </div>
+  </div>
+  <script>
+    enviadatos(envoltorio + "PATHIMAGENES" + separadorcampo); // Imagenes
+    enviadatos(envoltorio + "PATHX" + separadorcampo); // Imagenes
+    enviadatos(envoltorio + "LOCALHOST" + separadorcampo); //Dirección IP de imágenes
+    semaforo = false;
+    rellenaNombresclase();
+    cargadatos();
+    FiltraRegistros("iconos");
+    FiltraRegistros("planos");
+    AsignaDatos();
+    creaiconos();
+    muestraIconos(true, "Inicio de llamadas");
+    rellenanombreplanoicono();
+    
+    document.getElementById('botonfiles').addEventListener('change', handleFileSelect, false);
+    //var IntTiempo = setInterval(LanzaDatos, Tlatencia);
+    
+    consultaConfiguracion();
+    //var xe=1;
+    //******************************************************************
+   
+  </script>
+</body>
+
+</html>

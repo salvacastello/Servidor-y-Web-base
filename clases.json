@@ -1,0 +1,103 @@
+[
+    {
+        "Riego": {
+            "Tabla": "clases",
+            "Id": "Riego",
+            "Estado": "P",
+            "Version": "V201905",
+            "Origen": "web",
+            "ImagenClase": "http://banyeres.duckdns.org:56320/Planta.jpeg\n",
+            "FraseClase": "Riego",
+            "formaClase": "#f0ea47|#000000|5.42,0,0,3.76|2",
+            "ultimo": "1"
+        },
+        "Agua": {
+            "Tabla": "clases",
+            "Id": "Agua",
+            "Estado": "P",
+            "Version": "V201905",
+            "Origen": "web",
+            "ImagenClase": "http://banyeres.duckdns.org:56320/Iconos/VariosM/riego_Mesa de trabajo 1.png\n",
+            "FraseClase": "Agua de",
+            "formaClase": "#253ef8|#f40101|4.58,0,0,2.2|2",
+            "ultimo": "1"
+        },
+        "Puertas": {
+            "Tabla": "clases",
+            "Id": "Puertas",
+            "Estado": "P",
+            "Version": "V201905",
+            "Origen": "web",
+            "ImagenClase": "http://banyeres.duckdns.org:56320/Iconos/PUERTAS/PUERTA4.jpg\n",
+            "FraseClase": "Puerta de ",
+            "formaClase": "#ffffff|#000000|3.92,0,-0.06,4.9|3",
+            "ultimo": "1"
+        },
+        "Toldos": {
+            "Tabla": "clases",
+            "Id": "Toldos",
+            "Estado": "P",
+            "Version": "V201905",
+            "Origen": "web",
+            "ImagenClase": "http://banyeres.duckdns.org:56320/Iconos/TOLDOS/TOLDO1.jpg\n",
+            "FraseClase": "Tolo de ",
+            "formaClase": "#ff8040|#80ffff|2.95,0,0,3.4|7",
+            "ultimo": "1"
+        },
+        "Persianas": {
+            "Tabla": "clases",
+            "Id": "Persianas",
+            "Estado": "P",
+            "Version": "V201905",
+            "Origen": "web",
+            "ImagenClase": "http://banyeres.duckdns.org:56320/Iconos/PERSIANAS/PERSIANA1.jpg\n",
+            "FraseClase": "Persiana de ",
+            "formaClase": "#ffff80|#008040|3.8,0,0,4.24|7",
+            "ultimo": "1"
+        },
+        "Iluminaci\u00f3n": {
+            "Tabla": "clases",
+            "Id": "Iluminaci\u00f3n",
+            "Estado": "P",
+            "Version": "V201905",
+            "Origen": "web",
+            "ImagenClase": "http://banyeres.duckdns.org:56320/EPE47HFP39.jpeg",
+            "FraseClase": "Luz de ",
+            "formaClase": "#5dc6c6|#cc7171|3.62,0,0,3.42|3",
+            "ultimo": "1"
+        },
+        "Otros": {
+            "Tabla": "clases",
+            "Id": "Otros",
+            "Estado": "P",
+            "Version": "V201905",
+            "Origen": "web",
+            "ImagenClase": "http://banyeres.duckdns.org:56320/HEB0FEH17.jpeg",
+            "FraseClase": "",
+            "formaClase": "#5dc6c6|#cc7171|3.88,0,0,3.94|3",
+            "ultimo": "1"
+        },
+        "Estores": {
+            "Tabla": "clases",
+            "Id": "Estores",
+            "Estado": "P",
+            "Version": "V201905",
+            "Origen": "web",
+            "ImagenClase": "http://banyeres.duckdns.org:56320/JKN35PAP69.jpeg",
+            "FraseClase": "estor",
+            "formaClase": "#80ffff|#a42d39|3.88,0.03,0.02,3.94|4",
+            "ultimo": "1"
+        },
+        "Calefacci\u00f3n": {
+            "Tabla": "clases",
+            "Id": "Calefacci\u00f3n",
+            "Estado": "P",
+            "Version": "V201905",
+            "Origen": "web",
+            "ImagenClase": "http://www.servitecclima.com/wp-content/uploads/2015/05/calefaccion-2.png",
+            "FraseClase": "calefacci\u00f3n",
+            "formaClase": "#ff3300|#000005|5.04,0.16,-0.05,3.12|1",
+            "ultimo": "1"
+        }
+    }
+]

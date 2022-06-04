@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>DOMOCAS CONFIGURACION</title>
+  <link rel="icon" type="image/png"  href="favicon.ico">
+  <meta httpequiv="ContentType" content="text/html, width=device-width, initial-scale=1" charset="UTF-8">
+  <link href="stilobase.css" rel="stylesheet" type="text/css">
+  <script src="funcionesbase.js"></script> 
+</head>
+<style>
+  input[type=text],input[type=number],input[type=email] {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.8), 0 8px 20px 0 rgba(0, 0, 0, 0.5);
+    color: rgb(34, 27, 27);
+    margin: 2px 2px;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s;
+    border-radius: 2px;
+    width: 200px;
+    padding: 2px 1px;
+    margin: 3px 0;
+  }
+  
+</style>
+
+<body>
+  <div id="fondoAyuda"  style= "width:100%;height: 850px; background-color: black;position:absolute;
+  left:0px" >
+  <img src="https://image.freepik.com/foto-gratis/fondo-piso-madera_53876-88628.jpg"  
+   style= "width: 100%; height: 1050px; top:0px;">
+  <form action="PROCESACONFIGURACION" method="POST">
+
+    <fieldset style="top:10px; left: 0px; position: absolute;">
+    <legend><h1>Configuración:</h1></legend>
+    <table>
+      
+    <tr>
+      <th><label for="version">Versión:</label></th>
+      <th><input type="text" id="version" name="XSal2021.py" readonly></th>
+    </tr><tr>
+      <th><label for="URLACTUALIZACION">URL de búsqueda de actualizaciones:</label></th>
+      <th><input type="text" id="URLACTUALIZACION" name="URLACTUALIZACION"></th>
+    </tr><tr>
+      <th><label for="PORTBASE">Puerto:</label></th>
+      <th><input type="number" id="PORTBASE" name="PORTBASE" value=8080></th>
+    </tr><tr>
+      <th><label for="CARPETAINICIO">Carpeta del programa en el servidor:</label></th>
+      <th><input type="text" id="CARPETAINICIO" name="CARPETAINICIO" value=""></th>
+    </tr><tr>
+      <th><label for="PATHX">Carpeta de imágenes:</label></th>
+      <th><input type="text" id="PATHX" name="PATHX" value="Imagenes"></th>
+    </tr><tr>
+      <th><label for="HOSTMQTO">IP del servidor:</label></th>
+      <th><input type="text" id="HOSTMQTO" name="HOSTMQTO" value="192.168.1.250"></th>
+    </tr><tr>
+      <th><label for="TIEMPODEFALLOLUZ">Tiempo en segundos del fallo por suministro eléctrico:</label></th>
+      <th><input type="number" id="TIEMPODEFALLOLUZ" name="TIEMPODEFALLOLUZ" value=450></th>
+    </tr><tr>
+      <th><label for="TIEMPOACTUALIZACIONFALLOLUZ">Tiempo de actulización del programa para medir el fallo de luz:</label></th>
+      <th><input type="number" id="TIEMPOACTUALIZACIONFALLOLUZ" name="TIEMPOACTUALIZACIONFALLOLUZ" value=60></th>
+    </tr><tr>
+      <th><label for="PROGRAMA">Nombre del programa de control:</label></th>
+      <th><input type="text" id="PROGRAMA" name="PROGRAMA" value="XSal2021.py"></th>
+    </tr><tr>
+      <th><label for="NOMBREHTML">Nombre de la web:</label></th>
+      <th><input type="text" id="NOMBREHTML" name="NOMBREHTML" value="web2021.html"></th>
+    </tr><tr>
+      <th><label for="EJECUTAPROG">Ruta y nombre del programa python:</label></th>
+      <th><input type="text" id="EJECUTAPROG" name="EJECUTAPROG" value="python3"></th>
+    </tr><tr>
+      <th><label for="LONGITUD">Longitud terrestre del lugar para obtener las horas de salida y puesta de sol:</label></th>
+      <th><input type="number" id="LONGITUD" name="LONGITUD" value=-0.656943724580340></th>
+    </tr><tr>
+      <th><label for="LATITUD">Latitud terrestre del lugar para obtener las horas de salida y puesta de sol:</label></th>
+      <th><input type="number" id="LATITUD" name="LATITUD" value=38.71637835222301></th>
+    </tr><tr>
+      <th><label for="DESFASEUTC">Desfase horario respecto a UTC:</label></th>
+      <th><input type="number" id="DESFASEUTC" name="DESFASEUTC" value=1></th>
+    </tr><tr>
+	    <th><label for="TLATENCIA">Tiempo de refresco de la WEB:</label></th>
+      <th><input type="number" id="TLATENCIA" name="TLATENCIA" value=3500></th>
+    </tr><tr>
+      <th><label for="subscripciones">Nombre de la red:</label></th>
+      <th><input type="text" id="subscripciones" name="subscripciones" value="GENERICA"></th>
+    </tr><tr>
+      <th><label for="email">E-mail:</label></th>
+      <th><input type="email" id="email" name="email" ></th>
+    </tr><tr>
+      <th><label for="tiempolotemail">Tiempo generación del E-mail:</label></th>
+      <th><input type="number" id="tiempolotemail" name="tiempolotemail" value=50></th>
+    </tr><tr>
+      <th><h2>PARÁMETROS DE CUENTA DE CORREO</h2></th>
+    </tr><tr>
+      <th><label for="port">E-mail:</label></th>
+      <th><input type="number" id="port" name="port" value=465></th>
+    </tr><tr>
+      <th><label for="smtp_server_domain_name">smtp server domain name:</label></th>
+      <th><input type="text" id="smtp_server_domain_name" name="smtp_server_domain_name" value= "smtp.gmail.com"></th>
+    </tr><tr>
+      <th><label for="email">sender mail:</label></th>
+      <th><input type="email" id="sender_mail" name="sender_mail"></th>
+    </tr><tr>
+      <th><label for="password">password:</label></th>
+      <th><input type="text" id="password" name="password" ></th>
+    </tr>
+    </table>
+      <input type="submit" style="height:35px;top:0px; position: relative;
+      width: 200px;background-color:#5824d1; left: 430px;color:white;" value="Aceptar">
+    
+    </fieldset>
+  </form>
+  <script>
+//*****************************************************************
+obtieneConfiguracion(JSON.parse(sessionStorage.dato));
+//*****************************************************************
+  </script>
+</body>
+
+</html>
